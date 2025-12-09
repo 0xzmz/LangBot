@@ -1,11 +1,13 @@
 <p align="center">
 <a href="https://langbot.app">
-<img src="https://docs.langbot.app/social_en.png" alt="LangBot"/>
+<img width="130" src="https://docs.langbot.app/langbot-logo.png" alt="LangBot"/>
 </a>
 
 <div align="center">
 
 <a href="https://www.producthunt.com/products/langbot?utm_source=badge-follow&utm_medium=badge&utm_source=badge-langbot" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/follow.svg?product_id=1077185&theme=light" alt="LangBot - Production&#0045;grade&#0032;IM&#0032;bot&#0032;made&#0032;easy&#0046; | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+
+<h3>Quickly build, debug, and ship IM bots with LangBot.</h3>
 
 English / [简体中文](README.md) / [繁體中文](README_TW.md) / [日本語](README_JP.md) / [Español](README_ES.md) / [Français](README_FR.md) / [한국어](README_KO.md) / [Русский](README_RU.md) / [Tiếng Việt](README_VI.md)
 
@@ -23,7 +25,6 @@ English / [简体中文](README.md) / [繁體中文](README_TW.md) / [日本語]
 
 </p>
 
-LangBot is an open-source LLM native instant messaging robot development platform, aiming to provide out-of-the-box IM robot development experience, with Agent, RAG, MCP and other LLM application functions, adapting to global instant messaging platforms, and providing rich API interfaces, supporting custom development.
 
 ## 📦 Getting Started
 
@@ -78,6 +79,9 @@ Click the Star and Watch button in the upper right corner of the repository to g
 ![star gif](https://docs.langbot.app/star.gif)
 
 ## ✨ Features
+
+<img width="500" src="https://docs.langbot.app/ui/bot-page-en-rounded.png" />
+
 
 - 💬 Chat with LLM / Agent: Supports multiple LLMs, adapt to group chats and private chats; Supports multi-round conversations, tool calls, multi-modal, and streaming output capabilities. Built-in RAG (knowledge base) implementation, and deeply integrates with [Dify](https://dify.ai), [Coze](https://coze.com), [n8n](https://n8n.io) etc. LLMOps platforms.
 - 🤖 Multi-platform Support: Currently supports QQ, QQ Channel, WeCom, personal WeChat, Lark, DingTalk, Discord, Telegram, KOOK, Slack, LINE, etc.

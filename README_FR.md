@@ -1,11 +1,13 @@
 <p align="center">
 <a href="https://langbot.app">
-<img src="https://docs.langbot.app/social_en.png" alt="LangBot"/>
+<img width="130" src="https://docs.langbot.app/langbot-logo.png" alt="LangBot"/>
 </a>
 
 <div align="center">
 
 <a href="https://www.producthunt.com/products/langbot?utm_source=badge-follow&utm_medium=badge&utm_source=badge-langbot" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/follow.svg?product_id=1077185&theme=light" alt="LangBot - Production&#0045;grade&#0032;IM&#0032;bot&#0032;made&#0032;easy&#0046; | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+
+<h3>Créez, déboguez et déployez rapidement des bots de messagerie instantanée avec LangBot.</h3>
 
 [English](README_EN.md) / [简体中文](README.md) / [繁體中文](README_TW.md) / [日本語](README_JP.md) / [Español](README_ES.md) / Français / [한국어](README_KO.md) / [Русский](README_RU.md) / [Tiếng Việt](README_VI.md)
 
@@ -22,8 +24,6 @@
 </div>
 
 </p>
-
-LangBot est une plateforme de développement de robots de messagerie instantanée native LLM open source, visant à fournir une expérience de développement de robots de messagerie instantanée prête à l'emploi, avec des fonctionnalités d'application LLM telles qu'Agent, RAG, MCP, s'adaptant aux plateformes de messagerie instantanée mondiales et fournissant des interfaces API riches, prenant en charge le développement personnalisé.
 
 ## 📦 Commencer
 
@@ -78,6 +78,9 @@ Cliquez sur les boutons Star et Watch dans le coin supérieur droit du dépôt p
 ![star gif](https://docs.langbot.app/star.gif)
 
 ## ✨ Fonctionnalités
+
+<img width="500" src="https://docs.langbot.app/ui/bot-page-en-rounded.png" />
+
 
 - 💬 Chat avec LLM / Agent : Prend en charge plusieurs LLM, adapté aux chats de groupe et privés ; Prend en charge les conversations multi-tours, les appels d'outils, les capacités multimodales et de sortie en streaming. Implémentation RAG (base de connaissances) intégrée, et intégration profonde avec [Dify](https://dify.ai), [Coze](https://coze.com), [n8n](https://n8n.io) etc. LLMOps platforms.
 - 🤖 Support Multi-plateforme : Actuellement compatible avec QQ, QQ Channel, WeCom, WeChat personnel, Lark, DingTalk, Discord, Telegram, KOOK, Slack, LINE, etc.

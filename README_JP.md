@@ -1,11 +1,13 @@
 <p align="center">
 <a href="https://langbot.app">
-<img src="https://docs.langbot.app/social_en.png" alt="LangBot"/>
+<img width="130" src="https://docs.langbot.app/langbot-logo.png" alt="LangBot"/>
 </a>
 
 <div align="center">
 
 <a href="https://www.producthunt.com/products/langbot?utm_source=badge-follow&utm_medium=badge&utm_source=badge-langbot" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/follow.svg?product_id=1077185&theme=light" alt="LangBot - Production&#0045;grade&#0032;IM&#0032;bot&#0032;made&#0032;easy&#0046; | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+
+<h3>LangBotでIMボットを素早く構築、デバッグ、デプロイ。</h3>
 
 [English](README_EN.md) / [简体中文](README.md) / [繁體中文](README_TW.md) / 日本語 / [Español](README_ES.md) / [Français](README_FR.md) / [한국어](README_KO.md) / [Русский](README_RU.md) / [Tiếng Việt](README_VI.md)
 
@@ -22,8 +24,6 @@
 </div>
 
 </p>
-
-LangBot は、エージェント、RAG、MCP などの LLM アプリケーション機能を備えた、オープンソースの LLM ネイティブのインスタントメッセージングロボット開発プラットフォームです。世界中のインスタントメッセージングプラットフォームに適応し、豊富な API インターフェースを提供し、カスタム開発をサポートします。
 
 ## 📦 始め方
 
@@ -78,6 +78,9 @@ LangBotはBTPanelにリストされています。BTPanelをインストール�
 ![star gif](https://docs.langbot.app/star.gif)
 
 ## ✨ 機能
+
+<img width="500" src="https://docs.langbot.app/ui/bot-page-en-rounded.png" />
+
 
 - 💬 LLM / エージェントとのチャット: 複数のLLMをサポートし、グループチャットとプライベートチャットに対応。マルチラウンドの会話、ツールの呼び出し、マルチモーダル、ストリーミング出力機能をサポート、RAG（知識ベース）を組み込み、[Dify](https://dify.ai)、[Coze](https://coze.com)、[n8n](https://n8n.io) などの LLMOps プラットフォームと深く統合。
 - 🤖 多プラットフォーム対応: 現在、QQ、QQ チャンネル、WeChat、個人 WeChat、Lark、DingTalk、Discord、Telegram、KOOK、Slack、LINE など、複数のプラットフォームをサポートしています。

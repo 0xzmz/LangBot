@@ -76,9 +76,6 @@ class SlackEventConverter(abstract_platform_adapter.AbstractEventConverter):
                     id=event.channel_id, name='MEMBER', permission=platform_entities.Permission.Member
                 ),
                 special_title='',
-                join_timestamp=0,
-                last_speak_timestamp=0,
-                mute_time_remaining=0,
             )
             time = int(datetime.datetime.utcnow().timestamp())
             return platform_events.GroupMessage(
@@ -112,10 +109,7 @@ class SlackAdapter(abstract_platform_adapter.AbstractMessagePlatformAdapter):
             raise command_errors.ParamNotEnoughError('Slack机器人缺少相关配置项，请查看文档或联系管理员')
 
         bot = SlackClient(
-            bot_token=config['bot_token'],
-            signing_secret=config['signing_secret'],
-            logger=logger,
-            unified_mode=True
+            bot_token=config['bot_token'], signing_secret=config['signing_secret'], logger=logger, unified_mode=True
         )
 
         super().__init__(
@@ -194,24 +188,10 @@ class SlackAdapter(abstract_platform_adapter.AbstractMessagePlatformAdapter):
     async def run_async(self):
         # 统一 webhook 模式下，不启动独立的 Quart 应用
         # 保持运行但不启动独立端口
-
-        # 打印 webhook 回调地址
-        if self.bot_uuid and hasattr(self.logger, 'ap'):
-            try:
-                api_port = self.logger.ap.instance_config.data['api']['port']
-                webhook_url = f"http://127.0.0.1:{api_port}/bots/{self.bot_uuid}"
-                webhook_url_public = f"http://<Your-Public-IP>:{api_port}/bots/{self.bot_uuid}"
-
-                await self.logger.info(f"Slack 机器人 Webhook 回调地址:")
-                await self.logger.info(f"  本地地址: {webhook_url}")
-                await self.logger.info(f"  公网地址: {webhook_url_public}")
-                await self.logger.info(f"请在 Slack 后台配置此回调地址")
-            except Exception as e:
-                await self.logger.warning(f"无法生成 webhook URL: {e}")
-
         async def keep_alive():
             while True:
                 await asyncio.sleep(1)
+
         await keep_alive()
 
     async def kill(self) -> bool:
