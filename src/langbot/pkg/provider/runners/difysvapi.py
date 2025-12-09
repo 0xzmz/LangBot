@@ -108,6 +108,8 @@ class DifyServiceAPIRunner(runner.RequestRunner):
                 return 'audio'
             if content_type and content_type.startswith('video/'):
                 return 'video'
+            if content_type and content_type.startswith('application/'):
+                return 'custom'
             return 'document'
 
         if isinstance(query.user_message.content, list):
